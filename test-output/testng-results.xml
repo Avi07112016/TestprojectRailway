@@ -2,28 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-21T16:45:07 IST" name="Default suite" finished-at="2024-10-21T16:45:10 IST" duration-ms="3187">
+  <suite started-at="2024-10-21T20:20:34 IST" name="Default suite" finished-at="2024-10-21T20:20:37 IST" duration-ms="3065">
     <groups>
     </groups>
-    <test started-at="2024-10-21T16:45:07 IST" name="Default test" finished-at="2024-10-21T16:45:10 IST" duration-ms="3187">
+    <test started-at="2024-10-21T20:20:34 IST" name="Default test" finished-at="2024-10-21T20:20:37 IST" duration-ms="3065">
       <class name="com.railway.script.Supervisors_Management">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@4c583ecf]" started-at="2024-10-21T16:45:07 IST" name="OpenBrowser" finished-at="2024-10-21T16:45:08 IST" duration-ms="1638" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@443118b0]" started-at="2024-10-21T20:20:34 IST" name="OpenBrowser" finished-at="2024-10-21T20:20:35 IST" duration-ms="1640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com.railway.script.Supervisors_Management@4c583ecf]" started-at="2024-10-21T16:45:08 IST" name="Login" finished-at="2024-10-21T16:45:10 IST" duration-ms="1521" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:com.railway.script.Supervisors_Management@443118b0]" started-at="2024-10-21T20:20:35 IST" name="Login" finished-at="2024-10-21T20:20:36 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Admin()[pri:0, instance:com.railway.script.Supervisors_Management@4c583ecf]" started-at="2024-10-21T16:45:10 IST" name="Admin" finished-at="2024-10-21T16:45:10 IST" duration-ms="4" status="PASS">
+        <test-method signature="Admin()[pri:0, instance:com.railway.script.Supervisors_Management@443118b0]" started-at="2024-10-21T20:20:36 IST" name="Admin" finished-at="2024-10-21T20:20:37 IST" duration-ms="1187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Admin -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.railway.script.Supervisors_Management@4c583ecf]" started-at="2024-10-21T16:45:10 IST" name="Logout" finished-at="2024-10-21T16:45:10 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@4c583ecf]" started-at="2024-10-21T16:45:10 IST" name="CloseBrowser" finished-at="2024-10-21T16:45:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@443118b0]" started-at="2024-10-21T20:20:37 IST" name="CloseBrowser" finished-at="2024-10-21T20:20:37 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->

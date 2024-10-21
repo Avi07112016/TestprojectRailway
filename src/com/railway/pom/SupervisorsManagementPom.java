@@ -13,11 +13,13 @@ public class SupervisorsManagementPom {
 	@FindBy(xpath = "//button[text()='Add Supervisor']")
 	public WebElement AddSupervisor ;
 	
+	@FindBy(xpath = "//input[@name='fullName']")
+	public WebElement EnterSupervisor ;
+	
+	
 	public SupervisorsManagementPom(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
-	
 	public WebElement SupervisorsManagement() {
 		return SupervisorsManagement;
 	}
@@ -25,6 +27,9 @@ public class SupervisorsManagementPom {
 		return AddSupervisor;
 	}
 	
+	public WebElement EnterSupervisor() {
+		return EnterSupervisor;
+	}
 	
 
 }
