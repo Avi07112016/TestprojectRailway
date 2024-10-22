@@ -5,8 +5,9 @@
     <classes>
       <class name="com.railway.script.Supervisors_Management">
         <methods>
+          <include name="Stations"/>
+          <include name="StationsA"/>
           <include name="Admin"/>
-          <include name="Login"/>
           <include name="CloseBrowser"/>
           <include name="OpenBrowser"/>
         </methods>

@@ -16,7 +16,7 @@ import com.railway.pom.LogoutCPom;
 public class Base {
 
 	public WebDriver driver;
-	public WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(50));
+	public WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(40));
 	
 	@BeforeClass
 	public void OpenBrowser() {
@@ -24,15 +24,19 @@ public class Base {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://eastern-railway-admin-ui.dedicateddevelopers.us/login/");
-	}
-
-	@BeforeMethod
-	public void Login() {
 		LoginPom l = new LoginPom(driver);
 		l.LoginID().sendKeys("eastern-railway@yopmail.com");
 		l.Password().sendKeys("Test@123");
 		l.Loginbutton().click();
 	}
+
+//	@BeforeMethod
+//	public void Login() {
+//		LoginPom l = new LoginPom(driver);
+//		l.LoginID().sendKeys("eastern-railway@yopmail.com");
+//		l.Password().sendKeys("Test@123");
+//		l.Loginbutton().click();
+//	}
 
 //	@AfterMethod
 //	public void Logout() {

@@ -16,6 +16,14 @@ public class SupervisorsManagementPom {
 	@FindBy(xpath = "//input[@name='fullName']")
 	public WebElement EnterSupervisor ;
 	
+	@FindBy(xpath= "//input[@placeholder='Enter email address']")
+	public WebElement EnterEmailAddress ;
+	
+	@FindBy(xpath= "//input[@placeholder='Enter phone number']")
+	public WebElement EnterPhoneNumber ;
+	
+	@FindBy(xpath = "(//input[@type='checkbox'])[2]")
+	public WebElement Checkbox;
 	
 	public SupervisorsManagementPom(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -31,5 +39,14 @@ public class SupervisorsManagementPom {
 		return EnterSupervisor;
 	}
 	
-
+	public WebElement EnterEmailAddress() {
+		return EnterEmailAddress ;
+	}
+	
+	public WebElement EnterPhoneNumber() {
+		return EnterPhoneNumber ;
+	}
+	public WebElement Checkbox() {
+		return Checkbox;
+	}
 }

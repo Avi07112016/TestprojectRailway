@@ -10,9 +10,9 @@ package com.railway.pom;
 public static final String SupervisorsManagement = null;
 		//		@FindBy(xpath = "(//input[@name='row-radio-buttons-group'])[1]")
 //		public WebElement Admin;
-		@FindBy(xpath = "//input[@id=\":r1:\"]")
+		@FindBy(xpath = "//input[@name='email']")
 		public WebElement LoginID;
-		@FindBy(xpath = "//input[@id=\":r2:\"]")
+		@FindBy(xpath = "//input[@name='password']")
 		public WebElement Password;
 		@FindBy(xpath = "(//button[@type='button'])[2]")
 		public WebElement Eyebutton;
