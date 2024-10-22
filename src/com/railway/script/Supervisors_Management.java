@@ -26,7 +26,7 @@ public class Supervisors_Management extends Base {
 		wait.until(ExpectedConditions.visibilityOf(s.EnterEmailAddress()));
 		s.EnterEmailAddress().sendKeys("avi@yopmail.com");
 		wait.until(ExpectedConditions.visibilityOf(s.EnterPhoneNumber()));
-		s.EnterPhoneNumber().sendKeys("8100026012");;
+		s.EnterPhoneNumber().sendKeys("8100026012");
 
 	}
 
