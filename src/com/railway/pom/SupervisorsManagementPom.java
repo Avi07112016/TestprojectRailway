@@ -32,6 +32,23 @@ public class SupervisorsManagementPom {
 	public WebElement Continue;
 	@FindBy(xpath = "//button[contains(text(),'Preview & Submit')]")
 	public WebElement Preview;
+	@FindBy(xpath = "//p[contains(text(),'ai@yopmail.com')]")
+	public WebElement Validatemail;
+	@FindBy(xpath = "//div[text()='This Email Is Already Registered.']")
+	public WebElement Emailerror;
+	@FindBy(xpath = "//div[text()='This Email Is Already Registered.']")
+	public WebElement Phonenumbererror;
+	@FindBy(xpath = "//button[contains(text(),'Back')]")
+	public WebElement Backbutton;
+	@FindBy(xpath = "(//p[text()='Active'])[1]")
+	public WebElement ActiveButton;
+	@FindBy(xpath = "//p[contains(text(),'Are you sure you want to Change Status?')]")
+	public WebElement StatusPopup;
+	@FindBy(xpath = "//button[contains(text(),'Yes')]")
+	public WebElement YesButton;
+	@FindBy(xpath = "//p[contains(text(),'Inactive')]")
+	public WebElement InactiveButton;
+	
 	
 	public SupervisorsManagementPom(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -68,5 +85,29 @@ public class SupervisorsManagementPom {
 	}
 	public WebElement Preview() {
 		return Preview;
+	}
+	public WebElement Validatemail() {
+		return Validatemail;
+	}
+	public WebElement Emailerror() {
+		return Emailerror;
+	}
+	public WebElement Phonenumbererror() {
+		return Phonenumbererror;
+	}
+	public WebElement Backbutton() {
+		return Backbutton;
+	}
+	public WebElement ActiveButton() {
+		return ActiveButton;
+	}
+	public WebElement StatusPopup() {
+		return StatusPopup;
+	}
+	public WebElement YesButton() {
+		return YesButton;
+	}
+	public WebElement InactiveButton() {
+		return InactiveButton;
 	}
 }
