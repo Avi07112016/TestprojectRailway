@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LogoutCPom {
+public class LogoutPom {
 
 	@FindBy(xpath = "//button[contains(text(),'Logout')]")
 	public WebElement Logoutm;
@@ -16,7 +16,7 @@ public class LogoutCPom {
 	@FindBy(xpath = "//button[contains(text(),'Yes')]")
 	public WebElement Yes;
 
-	public LogoutCPom(WebDriver driver) {
+	public LogoutPom(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 

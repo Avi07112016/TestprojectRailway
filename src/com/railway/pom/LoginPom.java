@@ -7,7 +7,6 @@ package com.railway.pom;
 
 	public class LoginPom{
 
-public static final String SupervisorsManagement = null;
 		//		@FindBy(xpath = "(//input[@name='row-radio-buttons-group'])[1]")
 //		public WebElement Admin;
 		@FindBy(xpath = "//input[@name='email']")

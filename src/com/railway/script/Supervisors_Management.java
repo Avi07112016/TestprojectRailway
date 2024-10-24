@@ -77,11 +77,7 @@ public class Supervisors_Management extends Base {
 					s.StatusPopup().isDisplayed(); 
 					s.YesButton().click();
 				}
-			}
-			
-		
-			
-			
+			}	
 		}
 
 		else {
