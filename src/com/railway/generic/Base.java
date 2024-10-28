@@ -24,15 +24,6 @@ public class Base {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://eastern-railway-admin-ui.dedicateddevelopers.us/login/");
-		LoginPom l = new LoginPom(driver);
-		FileLibrary f=new FileLibrary();
-		String Login = f.getPropertyData("username");
-		l.LoginID().sendKeys(Login);
-		String Paswrd = f.getPropertyData("password");
-		l.Password().sendKeys(Paswrd);
-//		l.LoginID().sendKeys("eastern-railway@yopmail.com");
-//		l.Password().sendKeys("Test@123");
-		l.Loginbutton().click();
 	}
 
 //	@BeforeMethod

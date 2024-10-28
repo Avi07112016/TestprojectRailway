@@ -19,8 +19,14 @@ package com.railway.pom;
 		public WebElement Frgtpassword;
 		@FindBy(xpath = "//button[contains(text(),'Log In')]")
 		public WebElement Loginbutton;
-		
-		
+		@FindBy(xpath = "//div[text()='Oops! No user found.']")
+		public WebElement Nouserfound;
+		@FindBy(xpath = "//div[text()='Authentication failed!']")
+		public WebElement AuthenticationFailed;
+		@FindBy(xpath = "//p[text()='Please enter your email address.']")
+		public WebElement EnterEmailError;
+		@FindBy(xpath = "//p[text()='Please enter your password.']")
+		public WebElement EnterPasswordError;
 		
 
 		public LoginPom(WebDriver driver) {
@@ -43,7 +49,18 @@ package com.railway.pom;
 		}
 		public WebElement Loginbutton() {
 			return Loginbutton;
-		
+		}
+		public WebElement Nouserfound() {
+			return Nouserfound;
+		}
+		public WebElement AuthenticationFailed() {
+			return AuthenticationFailed;
+		}
+		public WebElement EnterEmailError() {
+			return EnterEmailError;
+		}
+		public WebElement EnterPasswordError() {
+			return EnterPasswordError;
 		}
 	}
 

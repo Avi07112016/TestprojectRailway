@@ -1,6 +1,7 @@
 package com.railway.script;
 
 import java.awt.Checkbox;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
@@ -12,12 +13,21 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.railway.generic.Base;
+import com.railway.generic.FileLibrary;
+import com.railway.pom.LoginPom;
 import com.railway.pom.SupervisorsManagementPom;
 
 public class Supervisors_Management extends Base {
 
 	@Test(priority = 0)
-	public void Admin() {
+	public void Admin() throws IOException {
+		LoginPom l = new LoginPom(driver);
+		FileLibrary f=new FileLibrary();
+		String Login = f.getPropertyData("username");
+		l.LoginID().sendKeys(Login);
+		String Paswrd = f.getPropertyData("password");
+		l.Password().sendKeys(Paswrd);
+		l.Loginbutton().click();
 		SupervisorsManagementPom s = new SupervisorsManagementPom(driver);
 		s.SupervisorsManagement().click();
 		s.AddSupervisor().click();
@@ -58,8 +68,7 @@ public class Supervisors_Management extends Base {
 			s.Backbutton().click();
 		} else {
 			System.out.println("new user");
-
-		}
+			}
 	}
 
 	@Test(priority = 3)
@@ -73,10 +82,10 @@ public class Supervisors_Management extends Base {
 
 			if (s.StatusPopup().isDisplayed()) {
 				s.YesButton().click();
-				if (s.InactiveButton().isEnabled()) {
-					s.StatusPopup().isDisplayed(); 
-					s.YesButton().click();
-				}
+//				if (s.InactiveButton().isEnabled()) {
+//					s.StatusPopup().isDisplayed(); 
+//					s.YesButton().click();
+//				}
 			}	
 		}
 
@@ -86,18 +95,4 @@ public class Supervisors_Management extends Base {
 		}
 
 	}
-//	@Test(priority=1)
-//	public void Submit() {
-//		SupervisorsManagementPom s= new SupervisorsManagementPom(driver);
-//		s.Continue().click();
-//		}
-
-//	@Test(priority=1)
-//	public void StationsA() {
-//		
-//		driver.findElement(By.xpath("(//input[@type='checkbox'])[2]")).click();
-//		}
-//		
-//	}
-
 }

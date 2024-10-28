@@ -5,14 +5,18 @@
     <classes>
       <class name="com.railway.script.Supervisors_Management">
         <methods>
-          <include name="StationA"/>
-          <include name="Admin"/>
           <include name="SupervisorManagementD"/>
           <include name="CloseBrowser"/>
           <include name="OpenBrowser"/>
-          <include name="ErrorMesaageValidation"/>
         </methods>
       </class> <!-- com.railway.script.Supervisors_Management -->
+      <class name="com.railway.script.LoginValidation">
+        <methods>
+          <include name="ValidLogin"/>
+          <include name="CloseBrowser"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- com.railway.script.LoginValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
