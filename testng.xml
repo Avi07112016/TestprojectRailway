@@ -3,7 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.railway.script.ForgotPasswordValidation"/>
       <class name="com.railway.script.Supervisors_Management"/>
+      <class name="com.railway.script.LoginValidation"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
