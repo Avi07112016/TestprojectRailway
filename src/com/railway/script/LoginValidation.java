@@ -26,7 +26,7 @@ public class LoginValidation extends Base {
 		l.Password().sendKeys(Paswrd);
 		l.Loginbutton().click();
 		LogoutPom Lgout = new LogoutPom(driver);
-		Lgout.Logoutm.click();
+		Lgout.Logoutm().click();
 		Lgout.Yes().click();
 	}
 

@@ -5,6 +5,7 @@
       <![CDATA[Email or phone number already exists. Clicking the back button]]>
     </line>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2024-10-29T19:31:06 IST" name="Default suite" finished-at="2024-10-29T19:31:19 IST" duration-ms="12484">
     <groups>
     </groups>
@@ -23,22 +24,51 @@
           </reporter-output>
         </test-method> <!-- StationA -->
         <test-method signature="ErrorMesaageValidation()[pri:2, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T19:31:10 IST" name="ErrorMesaageValidation" finished-at="2024-10-29T19:31:10 IST" duration-ms="326" status="PASS">
+=======
+  <suite started-at="2024-10-29T19:36:06 IST" name="Default suite" finished-at="2024-10-29T19:36:26 IST" duration-ms="19680">
+    <groups>
+    </groups>
+    <test started-at="2024-10-29T19:36:06 IST" name="Default test" finished-at="2024-10-29T19:36:26 IST" duration-ms="19680">
+      <class name="com.railway.script.Supervisors_Management">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:06 IST" name="OpenBrowser" finished-at="2024-10-29T19:36:08 IST" duration-ms="1606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="Admin()[pri:0, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:08 IST" name="Admin" finished-at="2024-10-29T19:36:11 IST" duration-ms="2571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Admin -->
+        <test-method signature="StationA()[pri:1, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:11 IST" name="StationA" finished-at="2024-10-29T19:36:11 IST" duration-ms="734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StationA -->
+        <test-method signature="ErrorMesaageValidation()[pri:2, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:11 IST" name="ErrorMesaageValidation" finished-at="2024-10-29T19:36:12 IST" duration-ms="374" status="PASS">
+>>>>>>> 47fc12f74653267bfadc3a51025dc907e9aa486f
           <reporter-output>
             <line>
               <![CDATA[Email or phone number already exists. Clicking the back button]]>
             </line>
           </reporter-output>
         </test-method> <!-- ErrorMesaageValidation -->
+<<<<<<< HEAD
         <test-method signature="SupervisorManagementD()[pri:3, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T19:31:10 IST" name="SupervisorManagementD" finished-at="2024-10-29T19:31:10 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SupervisorManagementD -->
         <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T19:31:10 IST" name="CloseBrowser" finished-at="2024-10-29T19:31:10 IST" duration-ms="1" status="PASS">
+=======
+        <test-method signature="SupervisorManagementD()[pri:3, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:12 IST" name="SupervisorManagementD" finished-at="2024-10-29T19:36:12 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SupervisorManagementD -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:12 IST" name="CloseBrowser" finished-at="2024-10-29T19:36:12 IST" duration-ms="0" status="PASS">
+>>>>>>> 47fc12f74653267bfadc3a51025dc907e9aa486f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- com.railway.script.Supervisors_Management -->
       <class name="com.railway.script.ForgotPasswordValidation">
+<<<<<<< HEAD
         <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.ForgotPasswordValidation@10683d9d]" started-at="2024-10-29T19:31:10 IST" name="OpenBrowser" finished-at="2024-10-29T19:31:12 IST" duration-ms="1814" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -48,11 +78,23 @@
           </reporter-output>
         </test-method> <!-- ForgotPasswordA -->
         <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.ForgotPasswordValidation@10683d9d]" started-at="2024-10-29T19:31:12 IST" name="CloseBrowser" finished-at="2024-10-29T19:31:12 IST" duration-ms="0" status="PASS">
+=======
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.ForgotPasswordValidation@815b41f]" started-at="2024-10-29T19:36:12 IST" name="OpenBrowser" finished-at="2024-10-29T19:36:14 IST" duration-ms="1834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="ForgotPasswordA()[pri:1, instance:com.railway.script.ForgotPasswordValidation@815b41f]" started-at="2024-10-29T19:36:14 IST" name="ForgotPasswordA" finished-at="2024-10-29T19:36:20 IST" duration-ms="6389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgotPasswordA -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.ForgotPasswordValidation@815b41f]" started-at="2024-10-29T19:36:20 IST" name="CloseBrowser" finished-at="2024-10-29T19:36:20 IST" duration-ms="1" status="PASS">
+>>>>>>> 47fc12f74653267bfadc3a51025dc907e9aa486f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- com.railway.script.ForgotPasswordValidation -->
       <class name="com.railway.script.LoginValidation">
+<<<<<<< HEAD
         <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T19:31:12 IST" name="OpenBrowser" finished-at="2024-10-29T19:31:15 IST" duration-ms="3178" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -86,6 +128,41 @@
           </reporter-output>
         </test-method> <!-- InValidLoginE -->
         <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T19:31:19 IST" name="CloseBrowser" finished-at="2024-10-29T19:31:19 IST" duration-ms="1" status="PASS">
+=======
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:20 IST" name="OpenBrowser" finished-at="2024-10-29T19:36:22 IST" duration-ms="2304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="ValidLogin()[pri:1, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:22 IST" name="ValidLogin" finished-at="2024-10-29T19:36:24 IST" duration-ms="1474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method signature="InValidLogin()[pri:2, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:24 IST" name="InValidLogin" finished-at="2024-10-29T19:36:24 IST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidLogin -->
+        <test-method signature="InValidLoginA()[pri:3, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:24 IST" name="InValidLoginA" finished-at="2024-10-29T19:36:25 IST" duration-ms="1103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidLoginA -->
+        <test-method signature="InValidLoginB()[pri:4, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:25 IST" name="InValidLoginB" finished-at="2024-10-29T19:36:26 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidLoginB -->
+        <test-method signature="InValidLoginC()[pri:5, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:26 IST" name="InValidLoginC" finished-at="2024-10-29T19:36:26 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidLoginC -->
+        <test-method signature="InValidLoginD()[pri:6, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:26 IST" name="InValidLoginD" finished-at="2024-10-29T19:36:26 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidLoginD -->
+        <test-method signature="InValidLoginE()[pri:6, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:26 IST" name="InValidLoginE" finished-at="2024-10-29T19:36:26 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidLoginE -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:26 IST" name="CloseBrowser" finished-at="2024-10-29T19:36:26 IST" duration-ms="0" status="PASS">
+>>>>>>> 47fc12f74653267bfadc3a51025dc907e9aa486f
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->

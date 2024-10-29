@@ -14,7 +14,7 @@ import com.railway.pom.LoginPom;
 public class ForgotPasswordValidation extends Base {
 	
 	@Test(priority = 1)
-	public void ForgotPasswordA() throws IOException {
+	public void ForgotPasswordA() throws IOException, InterruptedException {
 		LoginPom l = new LoginPom(driver);
 		FileLibrary f = new FileLibrary();
 		ForgotPasswordPom fgp = new ForgotPasswordPom(driver);
@@ -26,13 +26,14 @@ public class ForgotPasswordValidation extends Base {
 			System.out.println("Successfully navigated to the Reset Password page.");
 		} else {
 			System.out.println("Failed to navigate to the Reset Password page.");
-			return;
+			
 		}
 		String usrname = f.getPropertyData("username");
 		fgp.EnterYourMail().sendKeys(usrname);
 		fgp.submitButton().click();
 //		wait.until(ExpectedConditions.visibilityOf(fgp.verification()));
 		if (fgp.verification().isDisplayed()) {
+			
 			System.out.println("verification code sent");
 		} else {
 			System.out.println("verification failed");
