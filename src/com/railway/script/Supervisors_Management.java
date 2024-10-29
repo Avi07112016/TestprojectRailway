@@ -68,7 +68,8 @@ public class Supervisors_Management extends Base {
 			s.Backbutton().click();
 		} else {
 			System.out.println("new user");
-			}
+
+		}
 	}
 
 	@Test(priority = 3)

@@ -27,7 +27,6 @@ package com.railway.pom;
 		public WebElement EnterEmailError;
 		@FindBy(xpath = "//p[text()='Please enter your password.']")
 		public WebElement EnterPasswordError;
-		
 
 		public LoginPom(WebDriver driver) {
 			PageFactory.initElements(driver, this);

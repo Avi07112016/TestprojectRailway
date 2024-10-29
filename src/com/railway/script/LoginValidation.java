@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.railway.generic.Base;
@@ -146,6 +147,6 @@ public class LoginValidation extends Base {
 		String password = "   Test@123   ";
 		l.LoginID().sendKeys(usrname);
 		l.Password().sendKeys(password);
+		l.Loginbutton().click();
 	}
-	
 }
