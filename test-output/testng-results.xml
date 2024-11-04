@@ -1,168 +1,435 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="7" failed="5" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Email or phone number already exists. Clicking the back button]]>
-    </line>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2024-10-29T19:31:06 IST" name="Default suite" finished-at="2024-10-29T19:31:19 IST" duration-ms="12484">
+  <suite started-at="2024-10-29T20:13:51 IST" name="Default suite" finished-at="2024-10-29T20:14:16 IST" duration-ms="25335">
     <groups>
     </groups>
-    <test started-at="2024-10-29T19:31:06 IST" name="Default test" finished-at="2024-10-29T19:31:19 IST" duration-ms="12484">
+    <test started-at="2024-10-29T20:13:51 IST" name="Default test" finished-at="2024-10-29T20:14:16 IST" duration-ms="25335">
       <class name="com.railway.script.Supervisors_Management">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T19:31:06 IST" name="OpenBrowser" finished-at="2024-10-29T19:31:08 IST" duration-ms="1497" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T20:13:51 IST" name="OpenBrowser" finished-at="2024-10-29T20:13:52 IST" duration-ms="1515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="Admin()[pri:0, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T19:31:08 IST" name="Admin" finished-at="2024-10-29T19:31:09 IST" duration-ms="1377" status="PASS">
+        <test-method signature="Admin()[pri:0, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T20:13:52 IST" name="Admin" finished-at="2024-10-29T20:14:04 IST" duration-ms="11454" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.70)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [325fb7c56eef4776bd1ae18e2096b725, findElement {value=//span[text()='Supervisors Management'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\WEBSKI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55432/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 325fb7c56eef4776bd1ae18e2096b725]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.70)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [325fb7c56eef4776bd1ae18e2096b725, findElement {value=//span[text()='Supervisors Management'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\WEBSKI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55432/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 325fb7c56eef4776bd1ae18e2096b725
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at com.railway.script.Supervisors_Management.Admin(Supervisors_Management.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Admin -->
-        <test-method signature="StationA()[pri:1, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T19:31:09 IST" name="StationA" finished-at="2024-10-29T19:31:10 IST" duration-ms="689" status="PASS">
+        <test-method signature="StationA()[pri:1, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T20:14:04 IST" name="StationA" finished-at="2024-10-29T20:14:04 IST" duration-ms="5" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.70)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [325fb7c56eef4776bd1ae18e2096b725, findElement {value=(//input[@type='checkbox'])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\WEBSKI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55432/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 325fb7c56eef4776bd1ae18e2096b725]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.70)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [325fb7c56eef4776bd1ae18e2096b725, findElement {value=(//input[@type='checkbox'])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\WEBSKI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55432/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 325fb7c56eef4776bd1ae18e2096b725
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at com.railway.script.Supervisors_Management.StationA(Supervisors_Management.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StationA -->
-        <test-method signature="ErrorMesaageValidation()[pri:2, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T19:31:10 IST" name="ErrorMesaageValidation" finished-at="2024-10-29T19:31:10 IST" duration-ms="326" status="PASS">
-=======
-  <suite started-at="2024-10-29T19:36:06 IST" name="Default suite" finished-at="2024-10-29T19:36:26 IST" duration-ms="19680">
-    <groups>
-    </groups>
-    <test started-at="2024-10-29T19:36:06 IST" name="Default test" finished-at="2024-10-29T19:36:26 IST" duration-ms="19680">
-      <class name="com.railway.script.Supervisors_Management">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:06 IST" name="OpenBrowser" finished-at="2024-10-29T19:36:08 IST" duration-ms="1606" status="PASS">
+        <test-method signature="ErrorMesaageValidation()[pri:2, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T20:14:04 IST" name="ErrorMesaageValidation" finished-at="2024-10-29T20:14:04 IST" duration-ms="5" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.70)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [325fb7c56eef4776bd1ae18e2096b725, findElement {value=//button[contains(text(),'Preview & Submit')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\WEBSKI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55432/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 325fb7c56eef4776bd1ae18e2096b725]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.70)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [325fb7c56eef4776bd1ae18e2096b725, findElement {value=//button[contains(text(),'Preview & Submit')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\WEBSKI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55432/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 325fb7c56eef4776bd1ae18e2096b725
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at com.railway.script.Supervisors_Management.ErrorMesaageValidation(Supervisors_Management.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method signature="Admin()[pri:0, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:08 IST" name="Admin" finished-at="2024-10-29T19:36:11 IST" duration-ms="2571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Admin -->
-        <test-method signature="StationA()[pri:1, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:11 IST" name="StationA" finished-at="2024-10-29T19:36:11 IST" duration-ms="734" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StationA -->
-        <test-method signature="ErrorMesaageValidation()[pri:2, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:11 IST" name="ErrorMesaageValidation" finished-at="2024-10-29T19:36:12 IST" duration-ms="374" status="PASS">
->>>>>>> 47fc12f74653267bfadc3a51025dc907e9aa486f
-          <reporter-output>
-            <line>
-              <![CDATA[Email or phone number already exists. Clicking the back button]]>
-            </line>
           </reporter-output>
         </test-method> <!-- ErrorMesaageValidation -->
-<<<<<<< HEAD
-        <test-method signature="SupervisorManagementD()[pri:3, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T19:31:10 IST" name="SupervisorManagementD" finished-at="2024-10-29T19:31:10 IST" duration-ms="80" status="PASS">
+        <test-method signature="SupervisorManagementD()[pri:3, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T20:14:04 IST" name="SupervisorManagementD" finished-at="2024-10-29T20:14:04 IST" duration-ms="4" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.70)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [325fb7c56eef4776bd1ae18e2096b725, findElement {value=(//p[text()='Active'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\WEBSKI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55432/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 325fb7c56eef4776bd1ae18e2096b725]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.70)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [325fb7c56eef4776bd1ae18e2096b725, findElement {value=(//p[text()='Active'])[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\WEBSKI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55432}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55432/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 325fb7c56eef4776bd1ae18e2096b725
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at com.railway.script.Supervisors_Management.SupervisorManagementD(Supervisors_Management.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SupervisorManagementD -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T19:31:10 IST" name="CloseBrowser" finished-at="2024-10-29T19:31:10 IST" duration-ms="1" status="PASS">
-=======
-        <test-method signature="SupervisorManagementD()[pri:3, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:12 IST" name="SupervisorManagementD" finished-at="2024-10-29T19:36:12 IST" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SupervisorManagementD -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@3b69e7d1]" started-at="2024-10-29T19:36:12 IST" name="CloseBrowser" finished-at="2024-10-29T19:36:12 IST" duration-ms="0" status="PASS">
->>>>>>> 47fc12f74653267bfadc3a51025dc907e9aa486f
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.Supervisors_Management@1f2586d6]" started-at="2024-10-29T20:14:04 IST" name="CloseBrowser" finished-at="2024-10-29T20:14:04 IST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- com.railway.script.Supervisors_Management -->
       <class name="com.railway.script.ForgotPasswordValidation">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.ForgotPasswordValidation@10683d9d]" started-at="2024-10-29T19:31:10 IST" name="OpenBrowser" finished-at="2024-10-29T19:31:12 IST" duration-ms="1814" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.ForgotPasswordValidation@10683d9d]" started-at="2024-10-29T20:14:04 IST" name="OpenBrowser" finished-at="2024-10-29T20:14:05 IST" duration-ms="1417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="ForgotPasswordA()[pri:1, instance:com.railway.script.ForgotPasswordValidation@10683d9d]" started-at="2024-10-29T19:31:12 IST" name="ForgotPasswordA" finished-at="2024-10-29T19:31:12 IST" duration-ms="67" status="PASS">
+        <test-method signature="ForgotPasswordA()[pri:1, instance:com.railway.script.ForgotPasswordValidation@10683d9d]" started-at="2024-10-29T20:14:05 IST" name="ForgotPasswordA" finished-at="2024-10-29T20:14:12 IST" duration-ms="6634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForgotPasswordA -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.ForgotPasswordValidation@10683d9d]" started-at="2024-10-29T19:31:12 IST" name="CloseBrowser" finished-at="2024-10-29T19:31:12 IST" duration-ms="0" status="PASS">
-=======
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.ForgotPasswordValidation@815b41f]" started-at="2024-10-29T19:36:12 IST" name="OpenBrowser" finished-at="2024-10-29T19:36:14 IST" duration-ms="1834" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method signature="ForgotPasswordA()[pri:1, instance:com.railway.script.ForgotPasswordValidation@815b41f]" started-at="2024-10-29T19:36:14 IST" name="ForgotPasswordA" finished-at="2024-10-29T19:36:20 IST" duration-ms="6389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ForgotPasswordA -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.ForgotPasswordValidation@815b41f]" started-at="2024-10-29T19:36:20 IST" name="CloseBrowser" finished-at="2024-10-29T19:36:20 IST" duration-ms="1" status="PASS">
->>>>>>> 47fc12f74653267bfadc3a51025dc907e9aa486f
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.ForgotPasswordValidation@10683d9d]" started-at="2024-10-29T20:14:12 IST" name="CloseBrowser" finished-at="2024-10-29T20:14:12 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
       </class> <!-- com.railway.script.ForgotPasswordValidation -->
       <class name="com.railway.script.LoginValidation">
-<<<<<<< HEAD
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T19:31:12 IST" name="OpenBrowser" finished-at="2024-10-29T19:31:15 IST" duration-ms="3178" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T20:14:12 IST" name="OpenBrowser" finished-at="2024-10-29T20:14:13 IST" duration-ms="1154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="ValidLogin()[pri:1, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T19:31:15 IST" name="ValidLogin" finished-at="2024-10-29T19:31:17 IST" duration-ms="1684" status="PASS">
+        <test-method signature="ValidLogin()[pri:1, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T20:14:13 IST" name="ValidLogin" finished-at="2024-10-29T20:14:14 IST" duration-ms="832" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=130.0.6723.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e0f9aafaa6897ecccfded5dcc92499e, clickElement {id=f.72075B24D2AABDEB2E01E69E240F61ED.d.669714EC82337FFE315A07140E4F7743.e.37}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\WEBSKI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55493}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55493/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4e0f9aafaa6897ecccfded5dcc92499e)] -> xpath: //button[contains(text(),'Logout')]]
+Session ID: 4e0f9aafaa6897ecccfded5dcc92499e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=130.0.6723.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e0f9aafaa6897ecccfded5dcc92499e, clickElement {id=f.72075B24D2AABDEB2E01E69E240F61ED.d.669714EC82337FFE315A07140E4F7743.e.37}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\WEBSKI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55493}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55493/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4e0f9aafaa6897ecccfded5dcc92499e)] -> xpath: //button[contains(text(),'Logout')]]
+Session ID: 4e0f9aafaa6897ecccfded5dcc92499e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+at com.railway.script.LoginValidation.ValidLogin(LoginValidation.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLogin -->
-        <test-method signature="InValidLogin()[pri:2, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T19:31:17 IST" name="InValidLogin" finished-at="2024-10-29T19:31:18 IST" duration-ms="582" status="PASS">
+        <test-method signature="InValidLogin()[pri:2, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T20:14:14 IST" name="InValidLogin" finished-at="2024-10-29T20:14:15 IST" duration-ms="807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InValidLogin -->
-        <test-method signature="InValidLoginA()[pri:3, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T19:31:18 IST" name="InValidLoginA" finished-at="2024-10-29T19:31:18 IST" duration-ms="580" status="PASS">
+        <test-method signature="InValidLoginA()[pri:3, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T20:14:15 IST" name="InValidLoginA" finished-at="2024-10-29T20:14:15 IST" duration-ms="568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InValidLoginA -->
-        <test-method signature="InValidLoginB()[pri:4, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T19:31:18 IST" name="InValidLoginB" finished-at="2024-10-29T19:31:18 IST" duration-ms="106" status="PASS">
+        <test-method signature="InValidLoginB()[pri:4, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T20:14:15 IST" name="InValidLoginB" finished-at="2024-10-29T20:14:15 IST" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InValidLoginB -->
-        <test-method signature="InValidLoginC()[pri:5, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T19:31:18 IST" name="InValidLoginC" finished-at="2024-10-29T19:31:18 IST" duration-ms="142" status="PASS">
+        <test-method signature="InValidLoginC()[pri:5, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T20:14:15 IST" name="InValidLoginC" finished-at="2024-10-29T20:14:16 IST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InValidLoginC -->
-        <test-method signature="InValidLoginD()[pri:6, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T19:31:18 IST" name="InValidLoginD" finished-at="2024-10-29T19:31:19 IST" duration-ms="154" status="PASS">
+        <test-method signature="InValidLoginD()[pri:6, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T20:14:16 IST" name="InValidLoginD" finished-at="2024-10-29T20:14:16 IST" duration-ms="117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InValidLoginD -->
-        <test-method signature="InValidLoginE()[pri:6, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T19:31:19 IST" name="InValidLoginE" finished-at="2024-10-29T19:31:19 IST" duration-ms="173" status="PASS">
+        <test-method signature="InValidLoginE()[pri:6, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T20:14:16 IST" name="InValidLoginE" finished-at="2024-10-29T20:14:16 IST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InValidLoginE -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T19:31:19 IST" name="CloseBrowser" finished-at="2024-10-29T19:31:19 IST" duration-ms="1" status="PASS">
-=======
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:20 IST" name="OpenBrowser" finished-at="2024-10-29T19:36:22 IST" duration-ms="2304" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method signature="ValidLogin()[pri:1, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:22 IST" name="ValidLogin" finished-at="2024-10-29T19:36:24 IST" duration-ms="1474" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidLogin -->
-        <test-method signature="InValidLogin()[pri:2, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:24 IST" name="InValidLogin" finished-at="2024-10-29T19:36:24 IST" duration-ms="455" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InValidLogin -->
-        <test-method signature="InValidLoginA()[pri:3, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:24 IST" name="InValidLoginA" finished-at="2024-10-29T19:36:25 IST" duration-ms="1103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InValidLoginA -->
-        <test-method signature="InValidLoginB()[pri:4, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:25 IST" name="InValidLoginB" finished-at="2024-10-29T19:36:26 IST" duration-ms="119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InValidLoginB -->
-        <test-method signature="InValidLoginC()[pri:5, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:26 IST" name="InValidLoginC" finished-at="2024-10-29T19:36:26 IST" duration-ms="148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InValidLoginC -->
-        <test-method signature="InValidLoginD()[pri:6, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:26 IST" name="InValidLoginD" finished-at="2024-10-29T19:36:26 IST" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InValidLoginD -->
-        <test-method signature="InValidLoginE()[pri:6, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:26 IST" name="InValidLoginE" finished-at="2024-10-29T19:36:26 IST" duration-ms="243" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InValidLoginE -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.LoginValidation@5542c4ed]" started-at="2024-10-29T19:36:26 IST" name="CloseBrowser" finished-at="2024-10-29T19:36:26 IST" duration-ms="0" status="PASS">
->>>>>>> 47fc12f74653267bfadc3a51025dc907e9aa486f
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.railway.script.LoginValidation@3fc2959f]" started-at="2024-10-29T20:14:16 IST" name="CloseBrowser" finished-at="2024-10-29T20:14:16 IST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->

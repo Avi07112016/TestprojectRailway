@@ -75,6 +75,7 @@ public class Supervisors_Management extends Base {
 	@Test(priority = 3)
 	public void SupervisorManagementD() {
 		SupervisorsManagementPom s = new SupervisorsManagementPom(driver);
+		wait.until(ExpectedConditions.visibilityOf(s.ActiveButton()));
 		String email = "ai@yopmail.com";
 		String actualValue = s.Validatemail().getText();
 		System.out.println(actualValue);

@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.railway.generic.Base;

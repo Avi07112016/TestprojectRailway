@@ -2,6 +2,7 @@ package com.railway.generic;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,13 +17,15 @@ import com.railway.pom.LogoutPom;
 public class Base {
 
 	public WebDriver driver;
-	public WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(40));
+	public WebDriverWait wait =new WebDriverWait(driver,Duration.ofSeconds(30));
+	
+	
 	
 	@BeforeClass
 	public void OpenBrowser() throws IOException {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://eastern-railway-admin-ui.dedicateddevelopers.us/login/");
 	}
 
@@ -44,7 +47,7 @@ public class Base {
 
 	@AfterClass
 	public void CloseBrowser() {
-//			driver.quit();
+			driver.quit();
 
 	}
 
